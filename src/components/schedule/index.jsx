@@ -1,5 +1,5 @@
-import HeaderSchedule from './header'
-import ContentSchedule from './content'
+import HeaderSchedule from '@/components/schedule/Header'
+import ContentSchedule from '@/components/schedule/Content'
 import { ScheduleWrapper } from '@/style/schedule'
 import styled from 'styled-components'
 
