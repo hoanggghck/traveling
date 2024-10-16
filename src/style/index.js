@@ -44,5 +44,8 @@ export const Wrapper = styled.div`
   }
   width: 100%;
   height: 100%;
+  @media only screen and (max-width: 600px) {
+    height: calc(100vh - 80px);
+  }
   min-height: calc(100vh - 80px);
 `;
