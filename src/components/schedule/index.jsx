@@ -5,6 +5,9 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   height: calc(100vh - 330px);
+  @media only screen and (max-width: 600px) {
+    height: calc(100vh - 380px);
+  }
   overflow-y: auto;
   width: 100%;
 `
