@@ -7,6 +7,7 @@ export const PickdayWrapper = styled.div`
 export const NavBar = styled.ul`
   display: flex;
   list-style: none;
+  margin: 16px 0;
   li {
     margin-right: 8px;
     border-radius: 8px;

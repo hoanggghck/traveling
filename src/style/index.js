@@ -28,6 +28,9 @@ export const BackgroundWrapper = styled.div`
 
 export const Container =  styled.div`
   max-width: 950px;
+  @media only screen and (max-width: 600px) {
+    max-width: 95%;
+  }
   margin: 0 auto;
   padding: 40px 0;
 `
@@ -37,6 +40,9 @@ export const Wrapper = styled.div`
   border-radius: 16px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 16px;
+  @media only screen and (max-width: 600px) {
+    padding: 8px;
+  }
   width: 100%;
   height: 100%;
 `;
