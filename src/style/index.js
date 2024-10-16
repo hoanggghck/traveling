@@ -39,12 +39,9 @@ export const Wrapper = styled.div`
   border-radius: 16px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 16px;
-  @media only screen and (max-width: 600px) {
-    padding: 8px;
-  }
   width: 100%;
   height: 100%;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (min-width: 600px) {
     height: calc(100vh - 80px);
   }
 `;
