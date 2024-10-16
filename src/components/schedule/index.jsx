@@ -4,10 +4,6 @@ import { ScheduleWrapper } from '@/style/schedule'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  height: 500px;
-  @media only screen and (max-width: 600px) {
-    height: calc(100vh - 340px);
-  }
   overflow-y: auto;
   width: 100%;
 `
