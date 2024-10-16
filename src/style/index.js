@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const BackgroundWrapper = styled.div`
-  background-image: url('src/assets/images/cover.jpg');
+  background-image: url('./src/assets/images/cover.jpg');
   background-size: cover;
   height: 100vh;
   width: 100%;
