@@ -4,7 +4,7 @@ import { ScheduleWrapper } from '@/style/schedule'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  height: calc(100vh - 300px);
+  height: calc(100vh - 330px);
   overflow-y: auto;
   width: 100%;
 `

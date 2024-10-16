@@ -9,18 +9,26 @@ export const ScheduleWrapper = styled.div`
 
 export const TimeLineWrapper = styled.div`
   width: 150px;
+  text-align: center;
 `
 
 export const ContentWrapper = styled.div`
   width: calc(100% - 150px);
-  border-left: 1px solid #F6F6F5;
+  border-left: 1px solid var(--border);
+  &.header {
+    text-align: center;
+  }
 `
 
 export const ScheduleItem = styled.div`
-  background-color: #4DC591;
+  background-color: var(--primary);
   padding: 16px;
   border-radius: 16px;
   color: white;
+`
+export const TitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
   .title {
     font-weight: 600;
     margin-right: 10px;

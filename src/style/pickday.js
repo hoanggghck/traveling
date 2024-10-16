@@ -12,11 +12,12 @@ export const NavBar = styled.ul`
     border-radius: 8px;
     cursor: pointer;
     padding: 4px 16px;
-    background-color: #ffaaaa;
-    color: #555555;
-    opacity: 0.8;
+    background-color: none;
+    border: 1px solid var(--border);
     &.active {
-      opacity: 1;
+      border: 1px solid var(--secondary);
+      color: white;
+      background-color: var(--secondary);
     }
   }
 `

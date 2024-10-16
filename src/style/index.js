@@ -1,4 +1,22 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+  :root {
+    --primary: #4DC591;
+    --secondary: #ff7649;
+    --dark: #ff9362;
+    --border: #ecedef;
+  }
+  .text-bold {
+    font-weight: bold;  
+  }
+  .btn-link {
+    background-color: none;
+    margin: 0;
+    height: 22px;
+    width: auto;
+  }
+`
 
 export const BackgroundWrapper = styled.div`
   background-image: url('src/assets/images/cover.jpg');

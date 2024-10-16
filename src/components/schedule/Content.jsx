@@ -1,5 +1,8 @@
 import { ContentWrapper, ScheduleItem, ScheduleWrapper, TimeLineWrapper } from '@/style/schedule'
 import styled from 'styled-components'
+import SVGSprite from '../common/SVGSprite'
+import { TitleWrapper } from '@/style/sumary'
+import TypeSVG from '../common/TypeSVG'
 
 const ContentWrapper2 = styled(ContentWrapper)`
   padding: 16px;
@@ -20,9 +23,13 @@ const ContentSchedule = (props) => {
       </TimeLineWrapper2>
       <ContentWrapper2>
         <ScheduleItem>
-          <p><span className='title'>Tiêu đề:</span>{item.content.name}</p>
-          <p><span className='title'>Loại:</span>{item.content.type}</p>
-          <p><span className='title'>Địa chỉ:</span>{item.content.location}</p>
+          <TitleWrapper>
+            <span className='title'>{item.content.name}</span>
+            <TypeSVG type={item.content.type}/>
+          </TitleWrapper>
+          <TitleWrapper>
+            <span className='title'>Địa chỉ:</span>{item.content.location}<SVGSprite color="#ffffff" link="#" name="custom-location"/>
+          </TitleWrapper>
         </ScheduleItem>
       </ContentWrapper2>
     </ScheduleWrapper>
