@@ -47,5 +47,4 @@ export const Wrapper = styled.div`
   @media only screen and (max-width: 600px) {
     height: calc(100vh - 80px);
   }
-  min-height: calc(100vh - 80px);
 `;
