@@ -4,6 +4,7 @@ export const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 8px;
+  flex-wrap: wrap;
   .title {
     font-weight: 600;
     display: inline-block;
@@ -11,5 +12,7 @@ export const TitleWrapper = styled.div`
   }
   .content {
     margin-right: 5px;
+    display: flex;
+    align-items: center;
   }
 `
