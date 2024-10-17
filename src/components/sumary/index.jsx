@@ -27,8 +27,8 @@ const Sumary = () => {
             <span className="content">Khách sạn: {listSumary.hotel.name} </span>
           </TitleWrapper>
         </div>
-        <div className="cursor-pointer" onClick={() => setActiveTotal(true)}>
-          <SVGSprite name="custom-document" color="black"/>
+        <div>
+          <SVGSprite name="custom-document" color="black" handler={() => setActiveTotal(true)}/>
         </div>
       </SumaryWrapper>
       <Modal active={active} maxwidth={400}>

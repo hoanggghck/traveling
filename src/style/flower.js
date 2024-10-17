@@ -12,7 +12,7 @@ export const FlowerDropWrapper = styled.div`
     position: absolute;
     width: 30px;
     height: 30px;
-    background-image: url(${(props) => props.$imageSrc});
+    background-image: url('./src/assets/images/flowers/flower2.png');
     background-size: cover;
     animation: fall 5s linear infinite;
     opacity: 0.8;

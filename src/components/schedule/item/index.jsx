@@ -10,17 +10,11 @@ const ScheduleItemSecret = styled(ScheduleItem)`
 `
 
 const ScheduleItemData = ({ item }) => {
-  const { isOpen, open, close } = openAnimation()
-
-  const openFlowAnimation = () => {
-    console.log('a');
-    
-    isOpen ? close() : open() ;
-  }
+  const { open } = openAnimation()
 
   if (item.type == TYPE.secret) {
     return (
-      <ScheduleItemSecret onClick={openFlowAnimation}> 
+      <ScheduleItemSecret onClick={open}> 
         <SecretWrapper>
           <span className='title'>{item.content.name}</span>
           <SVGSprite name="custom-security-safe" />

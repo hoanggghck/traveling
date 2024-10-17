@@ -1,6 +1,6 @@
 import PickDay from '@/components/PickDay'
 import { BackgroundWrapper, Container, GlobalStyle, Wrapper } from './style'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import ScheduleContent from '@/components/schedule';
 import coverimage from '@/assets/images/cover.jpg';
 import Sumary from './components/sumary';
@@ -9,7 +9,14 @@ import { openAnimation } from './store/flower';
 
 function App() {
   const [activeDay, setActiveDay] = useState(1);
-  const { isOpen } = openAnimation()
+  const { isOpen, close } = openAnimation();
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => {
+        close();
+      }, 5000);
+    }
+  }, [close, isOpen])
   return (
     <>
       <GlobalStyle />

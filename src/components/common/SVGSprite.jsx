@@ -11,7 +11,7 @@ const SVGSprite = (props) => {
     )
   }
   return (
-    <svg style={{width: "22px", height: "22px"}} color={props.color} >
+    <svg className="cursor-pointer" style={{width: "22px", height: "22px"}} color={props.color} onClick={props.handler}>
       <use xlinkHref={`${SVG}#${props.name}`} />
     </svg>
   )
