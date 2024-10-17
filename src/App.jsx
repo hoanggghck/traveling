@@ -2,7 +2,6 @@ import PickDay from '@/components/PickDay'
 import { BackgroundWrapper, Container, GlobalStyle, Wrapper } from './style'
 import { useEffect, useState } from 'react'
 import ScheduleContent from '@/components/schedule';
-import coverimage from '@/assets/images/cover.jpg';
 import Sumary from './components/sumary';
 import FlowerDrop from './animation/FlowerDrop';
 import { openAnimation } from './store/flower';
@@ -20,7 +19,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <BackgroundWrapper $coverImage={coverimage.toString()}>
+      <BackgroundWrapper>
         <Container>
           <Wrapper>
             <Sumary />

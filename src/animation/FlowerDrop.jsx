@@ -1,6 +1,5 @@
 import { FlowerDropWrapper } from '@/style/flower'
 import { useEffect } from 'react';
-import flower1 from '@/assets/images/flowers/flower1.png';
 
 const FlowerDrop = () => {
   const createFlower = () => {
@@ -28,8 +27,7 @@ const FlowerDrop = () => {
     return () => clearInterval(interval); // Xóa interval khi component unmount
   }, []);
   return (
-    <FlowerDropWrapper className='flower-container' $imageSrc={flower1}>
-    </FlowerDropWrapper>
+    <FlowerDropWrapper className='flower-container' />
   )
 }
 

@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
+import coverimage from '@/assets/images/cover.jpg';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -25,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
 export const BackgroundWrapper = styled.div`
   min-height: 100vh;
   position: relative;
-  background-image: url(${props => props.$coverImage});
+  background-image: url(${coverimage});
   background-size: cover;
   overflow: hidden;
 `
