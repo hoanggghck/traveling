@@ -1,4 +1,4 @@
-import { NavBar, PickdayWrapper } from '@/style/pickday'
+import { NavBar } from '@/style/pickday'
 
 const PickDay = ({ activeDay, setActiveDay }) => {
   const renderActiveDay = [
@@ -14,11 +14,10 @@ const PickDay = ({ activeDay, setActiveDay }) => {
     )
   })
   return (
-    <PickdayWrapper>
-      <NavBar>
-        {renderNav}
-      </NavBar>
-    </PickdayWrapper>
+    <NavBar>
+      <div className="background"></div>
+      {renderNav}
+    </NavBar>
   )
 }
 
