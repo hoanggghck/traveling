@@ -27,7 +27,7 @@ export const BackgroundWrapper = styled.div`
   position: relative;
   background-image: url(${props => props.$coverImage});
   background-size: cover;
-  overflow-y: hidden;
+  overflow: hidden;
 `
 
 export const Container =  styled.div`
