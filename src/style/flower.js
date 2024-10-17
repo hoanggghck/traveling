@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import flower1 from '@/assets/images/flowers/flower1.png'
+import flower2 from '@/assets/images/flowers/flower2.png'
 
 export const FlowerDropWrapper = styled.div`
   position: absolute;
@@ -12,7 +14,12 @@ export const FlowerDropWrapper = styled.div`
     position: absolute;
     width: 30px;
     height: 30px;
-    background-image: url('/src/assets/images/flowers/flower2.png');
+    &.flower1 {
+      background-image: url(${flower1});
+    }
+    &.flower2 {
+      background-image: url(${flower2});
+    }
     background-size: cover;
     animation: fall 5s linear infinite;
     opacity: 0.8;

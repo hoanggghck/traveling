@@ -6,7 +6,9 @@ const FlowerDrop = () => {
   const createFlower = () => {
     const flowerContainer = document.querySelector('.flower-container');
     const flower = document.createElement('div');
+    const randomNumber = Math.floor(Math.random() * 2) + 1;
     flower.classList.add('flower');
+    flower.classList.add(`flower${randomNumber}`);
 
     // Vị trí ngẫu nhiên cho mỗi bông hoa
     flower.style.left = Math.random() * 100 + 'vw';
