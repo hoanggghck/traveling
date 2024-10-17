@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const PickdayWrapper = styled.div`
   display: flex;
   justify-content: end;
+  border-top: 1px solid var(--border);
 `
 export const NavBar = styled.ul`
   display: flex;

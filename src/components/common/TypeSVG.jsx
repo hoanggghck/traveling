@@ -4,7 +4,7 @@ const TypeSVG = ({ type, color = "white" }) => {
   const logoName = () => {
     switch (type) {
       case 'food':
-        return 'custom-heart-fill';
+        return 'custom-food';
       case 'coffe':
         return 'custom-coffee-outline';
       case 'travel':

@@ -30,11 +30,11 @@ const ContentSchedule = (props) => {
       <ContentWrapper2>
         <ScheduleItem>
           <TitleWrapper>
+            <TypeSVG type={item.content.type}/>&nbsp;
             <span className='title'>{item.content.name}</span>
-            <TypeSVG type={item.content.type}/>
           </TitleWrapper>
           <TitleWrapper>
-            <span className='title'>Địa chỉ:</span>{item.content.location}<SVGSprite color="#ffffff" link="#" name="custom-location"/>
+            <SVGSprite color="#ffffff" name="custom-location"/>&nbsp;<span className='title'>{item.content.location}</span>
           </TitleWrapper>
         </ScheduleItem>
       </ContentWrapper2>

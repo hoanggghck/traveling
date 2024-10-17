@@ -39,6 +39,10 @@ export const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
   @media only screen and (max-width: 600px) {
     font-size: 14px;
   }

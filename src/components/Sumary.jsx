@@ -1,19 +1,22 @@
-import { TitleWrapper } from "@/style/sumary"
+import { SumaryWrapper, TitleWrapper } from "@/style/sumary"
 import SVGSprite from "./common/SVGSprite"
 
 export const Sumary = () => {
   return (
-    <>
-      <TitleWrapper><span className="title">Tên chuyến đi:</span> Du lịch Đà Lạt 3 Ngày 2 đêm</TitleWrapper>
-      <TitleWrapper><span className="title">Thời gian:</span> 10/11/2024 ~ 14/11/2024</TitleWrapper>
+    <SumaryWrapper>
+      <TitleWrapper><span className="title">Du lịch Đà Lạt 3 Ngày 2 đêm</span> </TitleWrapper>
       <TitleWrapper>
-        <span className="title">Phương tiện di chuyển:</span>
-        <span className="content">Xe giường nằm <SVGSprite link="#" name="custom-link2" color="black"/></span>
+        <SVGSprite name="custom-clock-outline" color="black"/>&nbsp;
+        <span className="content">10/11/2024 ~ 14/11/2024</span>
       </TitleWrapper>
       <TitleWrapper>
-        <span className="title">Nơi ở:</span>
-        <span className="content">Khách sạn <SVGSprite link="#" name="custom-house" color="black"/></span>
+        <SVGSprite name="custom-car" color="black"/>&nbsp;
+        <span className="content">Phương tiện di chuyển</span>
       </TitleWrapper>
-    </>
+      <TitleWrapper>
+        <SVGSprite name="custom-house" color="black"/>&nbsp;
+        <span className="content">Khách sạn </span>
+      </TitleWrapper>
+    </SumaryWrapper>
   )
 }

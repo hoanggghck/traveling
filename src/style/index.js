@@ -26,7 +26,7 @@ export const BackgroundWrapper = styled.div`
 `
 
 export const Container =  styled.div`
-  max-width: 950px;
+  max-width: 750px;
   @media only screen and (max-width: 600px) {
     max-width: 95%;
   }
@@ -38,10 +38,11 @@ export const Wrapper = styled.div`
   background-color: #fff;
   border-radius: 16px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 16px;
   width: 100%;
   height: 100%;
   @media only screen and (min-width: 600px) {
     height: calc(100vh - 80px);
   }
+  padding-bottom: 40px;
+  overflow: hidden;
 `;
