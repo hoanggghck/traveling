@@ -18,15 +18,17 @@ const Wrapper = styled.div`
   }
 `
 
-export const ModalTransport = ({ close }) => {
+export const ModalTotal = ({ close }) => {
   const sum = listSumary.transport.taxi + listSumary.transport.limouse + listSumary.transport.bike;
   return (
     <Wrapper>
-      <p>Tiền taxi: {listSumary.transport.taxi}</p>
-      <p>Tiền Limouse: {listSumary.transport.limouse}</p>
-      <p>Tiền thuê xe máy: {listSumary.transport.bike}</p>
+      <p>Tiền di chuyển: {sum}</p>
+      <p>Tiền thuê khách sạn: {listSumary.transport.bike}</p>
+      <p>Tiền ăn: 122</p>
+      <p>Tiền cafe: 341</p>
+      <p>Tiền du lịch: 1234</p>
       <hr />
-      <p>Tổng tiền: {sum}</p>
+      <p>Tổng tiền: ...</p>
       <button type="button" onClick={close}>Đóng</button>
     </Wrapper>
   )

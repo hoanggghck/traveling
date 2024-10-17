@@ -1,8 +1,7 @@
-import { ContentWrapper, ScheduleItem, ScheduleWrapper, TimeLineWrapper } from '@/style/schedule'
 import styled from 'styled-components'
-import SVGSprite from '../common/SVGSprite'
-import { TitleWrapper } from '@/style/schedule'
-import TypeSVG from '../common/TypeSVG'
+
+import { ContentWrapper, ScheduleWrapper, TimeLineWrapper } from '@/style/schedule'
+import ScheduleItemData from './item'
 
 const ContentWrapper2 = styled(ContentWrapper)`
   padding: 16px;
@@ -28,15 +27,7 @@ const ContentSchedule = (props) => {
         <p className="time-end">{item.timeEnd}</p>
       </TimeLineWrapper2>
       <ContentWrapper2>
-        <ScheduleItem>
-          <TitleWrapper>
-            <TypeSVG type={item.content.type}/>&nbsp;
-            <span className='title'>{item.content.name}</span>
-          </TitleWrapper>
-          <TitleWrapper>
-            <SVGSprite color="#ffffff" name="custom-location"/>&nbsp;<span className='title'>{item.content.location}</span>
-          </TitleWrapper>
-        </ScheduleItem>
+        <ScheduleItemData item={item} />
       </ContentWrapper2>
     </ScheduleWrapper>
   )

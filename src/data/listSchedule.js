@@ -1,62 +1,26 @@
+import { TYPE } from "@/utils/const";
+
 export const listDay1 = [
   {
     timeStart: '11: 20',
     timeEnd: '12: 30',
+    type: TYPE.food,
     content: {
       name: 'Ăn bún bò',
-      type: 'food',
       location: '123 Nguyễn Ảnh Thủ',
-      url: '#'
+      url: '#',
+      price: 100000
     }
   },
   {
-    timeStart: '13: 30',
-    timeEnd: '14: 30',
+    timeStart: '20: 20',
+    timeEnd: '00: 00',
+    type: TYPE.secret,
     content: {
-      name: 'Cafe',
-      type: 'coffe',
-      location: '124 Nguyễn Ảnh Thủ',
-      url: '#'
-    }
-  },
-  {
-    timeStart: '17: 30',
-    timeEnd: '18: 30',
-    content: {
-      name: 'Ăn bánh tráng nướng  + sữa đậu nành',
-      type: 'food',
-      location: 'Chợ đà lạt',
-      url: '#'
-    }
-  },
-  {
-    timeStart: '17: 30',
-    timeEnd: '18: 30',
-    content: {
-      name: 'Ăn bánh tráng nướng  + sữa đậu nành',
-      type: 'food',
-      location: 'Chợ đà lạt',
-      url: '#'
-    }
-  },
-  {
-    timeStart: '17: 30',
-    timeEnd: '18: 30',
-    content: {
-      name: 'Ăn bánh tráng nướng  + sữa đậu nành',
-      type: 'food',
-      location: 'Chợ đà lạt',
-      url: '#'
-    }
-  },
-  {
-    timeStart: '17: 30',
-    timeEnd: '18: 30',
-    content: {
-      name: 'Ăn bánh tráng nướng  + sữa đậu nành',
-      type: 'food',
-      location: 'Chợ đà lạt',
-      url: '#'
+      name: 'Bí Mật',
+      location: '',
+      url: '#',
+      price: 0
     }
   },
 ]

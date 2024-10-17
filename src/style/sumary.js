@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const SumaryWrapper = styled.div`
   padding: 16px;
+  display: flex;
+  justify-content: space-between;
 `
 export const TitleWrapper = styled.div`
   display: flex;

@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     --secondary: #ff7649;
     --dark: #ff9362;
     --border: #ecedef;
+    --purple: #8e81d2;
   }
   .text-bold {
     font-weight: bold;  

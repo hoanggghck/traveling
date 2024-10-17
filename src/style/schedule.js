@@ -46,7 +46,9 @@ export const TitleWrapper = styled.div`
   @media only screen and (max-width: 600px) {
     font-size: 14px;
   }
-  .title {
-    margin-right: 10px;
-  }
+`
+
+export const SecretWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
 `

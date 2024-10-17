@@ -1,13 +1,14 @@
 import SVG from '@/assets/svg/sprite.svg'
+import { TYPE } from '@/utils/const';
 
 const TypeSVG = ({ type, color = "white" }) => {
   const logoName = () => {
     switch (type) {
-      case 'food':
+      case TYPE.food:
         return 'custom-food';
-      case 'coffe':
+      case TYPE.cofee:
         return 'custom-coffee-outline';
-      case 'travel':
+      case TYPE.travel:
         return 'custom-star-outline';
     }
   }
