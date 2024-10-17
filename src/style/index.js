@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const BackgroundWrapper = styled.div`
   min-height: 100vh;
+  position: relative;
   background-image: url(${props => props.$coverImage});
   background-size: cover;
   overflow-y: hidden;

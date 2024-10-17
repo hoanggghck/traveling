@@ -1,5 +1,6 @@
 import SVGSprite from '@/components/common/SVGSprite'
 import TypeSVG from '@/components/common/TypeSVG'
+import { openAnimation } from '@/store/flower'
 import { ScheduleItem, SecretWrapper, TitleWrapper } from '@/style/schedule'
 import { TYPE } from '@/utils/const'
 import styled from 'styled-components'
@@ -9,9 +10,17 @@ const ScheduleItemSecret = styled(ScheduleItem)`
 `
 
 const ScheduleItemData = ({ item }) => {
+  const { isOpen, open, close } = openAnimation()
+
+  const openFlowAnimation = () => {
+    console.log('a');
+    
+    isOpen ? close() : open() ;
+  }
+
   if (item.type == TYPE.secret) {
     return (
-      <ScheduleItemSecret>
+      <ScheduleItemSecret onClick={openFlowAnimation}> 
         <SecretWrapper>
           <span className='title'>{item.content.name}</span>
           <SVGSprite name="custom-security-safe" />

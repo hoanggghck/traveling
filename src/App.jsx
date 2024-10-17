@@ -4,9 +4,12 @@ import { useState } from 'react'
 import ScheduleContent from '@/components/schedule';
 import coverimage from '@/assets/images/cover.jpg';
 import Sumary from './components/sumary';
+import FlowerDrop from './animation/FlowerDrop';
+import { openAnimation } from './store/flower';
 
 function App() {
   const [activeDay, setActiveDay] = useState(1);
+  const { isOpen } = openAnimation()
   return (
     <>
       <GlobalStyle />
@@ -21,6 +24,9 @@ function App() {
             <ScheduleContent />
           </Wrapper>
         </Container>
+        {isOpen && 
+          <FlowerDrop />
+        }
       </BackgroundWrapper>
     </>
   )
