@@ -1,16 +1,16 @@
 import PickDay from '@/components/PickDay'
-import { Sumary } from '@/components/Sumary'
 import { BackgroundWrapper, Container, GlobalStyle, Wrapper } from './style'
 import { useState } from 'react'
-import ScheduleContent from './components/schedule';
-import coverImage from './assets/images/cover.jpg';
+import ScheduleContent from '@/components/schedule';
+import coverimage from '@/assets/images/cover.jpg';
+import Sumary from '@/components/Sumary';
 
 function App() {
   const [activeDay, setActiveDay] = useState(1);
   return (
     <>
       <GlobalStyle />
-      <BackgroundWrapper coverImage={coverImage}>
+      <BackgroundWrapper $coverImage={coverimage.toString()}>
         <Container>
           <Wrapper>
             <Sumary />

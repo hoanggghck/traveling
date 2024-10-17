@@ -16,11 +16,14 @@ export const GlobalStyle = createGlobalStyle`
     height: 22px;
     width: auto;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
 `
 
 export const BackgroundWrapper = styled.div`
   min-height: 100vh;
-  background-image: url(${props => props.coverImage});
+  background-image: url(${props => props.$coverImage});
   background-size: cover;
   overflow-y: hidden;
 `
