@@ -1,39 +1,14 @@
-import PickDay from '@/components/PickDay'
-import { BackgroundWrapper, Container, GlobalStyle, Wrapper } from './style'
-import { useEffect, useState } from 'react'
-import ScheduleContent from '@/components/schedule';
-import Sumary from './components/sumary';
-import FlowerDrop from './animation/FlowerDrop';
-import { openAnimation } from './store/flower';
+import { RouterProvider } from 'react-router-dom'
+import { GlobalStyle } from './style'
+import { router } from './router'
 
 function App() {
-  const [activeDay, setActiveDay] = useState(1);
-  const { isOpen, close } = openAnimation();
-  useEffect(() => {
-    if (isOpen) {
-      setTimeout(() => {
-        close();
-      }, 5000);
-    }
-  }, [close, isOpen])
+
+
   return (
     <>
       <GlobalStyle />
-      <BackgroundWrapper>
-        <Container>
-          <Wrapper>
-            <Sumary />
-            <PickDay
-              activeDay={activeDay}
-              setActiveDay={setActiveDay}
-            />
-            <ScheduleContent />
-          </Wrapper>
-        </Container>
-        {isOpen && 
-          <FlowerDrop />
-        }
-      </BackgroundWrapper>
+      <RouterProvider router={router} />
     </>
   )
 }
