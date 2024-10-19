@@ -41,27 +41,31 @@ const ScheduleItemSecret = styled(ScheduleItem)`
 const ScheduleItemData = ({ item }) => {
   const { open } = openAnimation();
   const [openFlower, setOpenFlower] = useState(false);
-  if (item.type == TYPE.secret) {
-    return (
-      <ScheduleItemSecret onClick={open}> 
-        <SecretWrapper>
-          <span className='title'>{item.content.name}</span>
-          <SVGSprite name="custom-security-safe" handler={() => setOpenFlower(true)}/>
-        </SecretWrapper>
-        {openFlower && <div className="background"></div>}
-      </ScheduleItemSecret>
-    )
+
+  const renderBgr = () => {
+    switch (item.type) {
+      case TYPE.food:
+        return 'secondary';
+      case TYPE.cofee:
+        return 'darker';
+      case TYPE.secret:
+        return 'purple';
+      default:
+        return 'primary'
+    }
   }
   return (
-    <ScheduleItem>
+    <ScheduleItem $bgr={renderBgr}>
       <SecretWrapper>
         <div>
           <TitleWrapper>
             <span className='title'>{item.content.name}</span>
           </TitleWrapper>
-          <TitleWrapper>
-            <SVGSprite color="#ffffff" name="custom-location"/>&nbsp;<span className='title'>{item.content.location}</span>
-          </TitleWrapper>
+          { item.content.location &&
+            <TitleWrapper>
+              <SVGSprite color="#ffffff" name="custom-location"/>&nbsp;<span className='title'>{item.content.location}</span>
+            </TitleWrapper>
+          }
         </div>
         <TypeSVG type={item.type}/>
       </SecretWrapper>

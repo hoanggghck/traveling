@@ -26,7 +26,7 @@ export const HomePage = () => {
             activeDay={activeDay}
             setActiveDay={setActiveDay}
           />
-          <ScheduleContent />
+          <ScheduleContent activeDay={activeDay}/>
         </Wrapper>
       </Container>
       {isOpen &&

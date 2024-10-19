@@ -11,6 +11,7 @@ export const ModalBackdrop = styled.div`
   visibility: ${(props) => props.$active ? 'visible' : 'hidden'};
   opacity: ${(props) => props.$active ? '0.3' : '0'};
   animation: fadeIn 1s;
+  transition: transform .3s ease-out;
   @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 0.3; }

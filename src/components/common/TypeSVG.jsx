@@ -8,8 +8,10 @@ const TypeSVG = ({ type, color = "white" }) => {
         return 'custom-food';
       case TYPE.cofee:
         return 'custom-coffee-outline';
-      case TYPE.travel:
-        return 'custom-star-outline';
+      case TYPE.sightseeing:
+        return 'custom-eye';
+      case TYPE.secret:
+        return 'custom-security-safe';
     }
   }
   return (

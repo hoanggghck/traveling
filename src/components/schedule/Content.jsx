@@ -27,7 +27,7 @@ const ContentSchedule = (props) => {
         <p className="time-end">{item.timeEnd}</p>
       </TimeLineWrapper2>
       <ContentWrapper2>
-        <ScheduleItemData item={item} />
+        <ScheduleItemData item={item}/>
       </ContentWrapper2>
     </ScheduleWrapper>
   )

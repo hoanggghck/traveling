@@ -27,7 +27,7 @@ export const ContentWrapper = styled.div`
 `
 
 export const ScheduleItem = styled.div`
-  background-color: var(--primary);
+  background-color: var(--${props => props.$bgr});
   padding: 16px;
   @media only screen and (max-width: 600px) {
     padding: 8px;

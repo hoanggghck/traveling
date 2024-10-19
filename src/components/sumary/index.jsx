@@ -15,20 +15,20 @@ const Sumary = () => {
         <div>
           <TitleWrapper><span className="title">{listSumary.title}</span> </TitleWrapper>
           <TitleWrapper>
-            <SVGSprite name="custom-clock-outline" color="black"/>&nbsp;
+            <SVGSprite name="custom-clock-outline" color="#4f3842"/>&nbsp;
             <span className="content">{listSumary.time}</span>
           </TitleWrapper>
           <TitleWrapper className="cursor-pointer" onClick={() => setActive(true)}>
-            <SVGSprite name="custom-car" color="black"/>&nbsp;
+            <SVGSprite name="custom-car" color="#4f3842"/>&nbsp;
             <span className="content">Phương tiện di chuyển</span>
           </TitleWrapper>
           <TitleWrapper>
-            <SVGSprite name="custom-house" link={listSumary.hotel.maps} color="black"/>&nbsp;
+            <SVGSprite name="custom-house" link={listSumary.hotel.maps} color="#4f3842"/>&nbsp;
             <span className="content">Khách sạn: {listSumary.hotel.name} </span>
           </TitleWrapper>
         </div>
         <div>
-          <SVGSprite name="custom-document" color="black" handler={() => setActiveTotal(true)}/>
+          <SVGSprite name="custom-document" color="#4f3842" handler={() => setActiveTotal(true)}/>
         </div>
       </SumaryWrapper>
       <Modal active={active} maxwidth={400}>

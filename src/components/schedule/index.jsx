@@ -2,7 +2,7 @@ import HeaderSchedule from '@/components/schedule/Header'
 import ContentSchedule from '@/components/schedule/Content'
 import { ScheduleWrapper } from '@/style/schedule'
 import styled from 'styled-components'
-import { listDay1 } from '@/data/listSchedule'
+import { listDay1, listDay2, listDay3 } from '@/data/listSchedule'
 
 const Wrapper = styled.div`
   @media only screen and (min-width: 600px) {
@@ -12,8 +12,13 @@ const Wrapper = styled.div`
   width: 100%;
 `
 
-const ScheduleContent = () => {
-  const listRender = listDay1.map((item, index) => {
+const ScheduleContent = ({ activeDay }) => {
+  const dataShow = {
+    1: listDay1,
+    2: listDay2,
+    3: listDay3
+  }
+  const listRender = dataShow[activeDay].map((item, index) => {
     return (
       <ContentSchedule key={index} item={item} />
     )

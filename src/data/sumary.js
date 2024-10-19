@@ -8,6 +8,7 @@ export const listSumary = {
   },
   hotel: {
     name: "AAAA",
-    maps: ''
+    maps: '',
+    price: 1000
   }
 }

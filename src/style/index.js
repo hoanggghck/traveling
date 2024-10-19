@@ -8,9 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     --dark: #ff9362;
     --border: #ecedef;
     --purple: #8e81d2;
+    --darker: #4f3842;
   }
   .text-bold {
-    font-weight: bold;  
+    font-weight: bold;
   }
   .btn-link {
     background-color: none;
