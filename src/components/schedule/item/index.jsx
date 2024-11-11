@@ -54,9 +54,15 @@ const ScheduleItemData = ({ item }) => {
         return 'primary'
     }
   }
+
+  const openNewTab = () => {
+    if (item.content.url !== '#') {
+      window.open(item.content.url);
+    }
+  }
   return (
     <ScheduleItem $bgr={renderBgr}>
-      <SecretWrapper>
+      <SecretWrapper onClick={openNewTab}>
         <div>
           <TitleWrapper>
             <span className='title'>{item.content.name}</span>
