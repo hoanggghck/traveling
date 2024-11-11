@@ -6,17 +6,6 @@ const Wrapper = styled.div`
   .content {
     display: block;
   }
-  button {
-    width: 150px;
-    background-color: var(--secondary);
-    border: none;
-    border-radius: 16px;
-    color: white;
-    cursor: pointer;
-    display: block;
-    margin: 8px auto;
-    padding: 8px 16px;
-  }
 `
 
 export const ModalTransport = ({ close }) => {
@@ -28,7 +17,7 @@ export const ModalTransport = ({ close }) => {
       <p>Tiền thuê xe máy: {toCommas(listSumary.transport.bike*1000)}</p>
       <hr />
       <p>Tổng tiền: {toCommas(sum*1000)}</p>
-      <button type="button" onClick={close}>Đóng</button>
+      <button className="btn-custom" type="button" onClick={close}>Đóng</button>
     </Wrapper>
   )
 }

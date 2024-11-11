@@ -51,7 +51,7 @@ export const ModalTotal = ({ close }) => {
       <p>Tiền ngắm cảnh: {toCommas(sumTravel*1000)}</p>
       <hr />
       <p>Tổng tiền: {toCommas((sumTransport + sumFood + sumCoffe + sumHotel + sumTravel)*1000)}</p>
-      <button type="button" onClick={close}>Đóng</button>
+      <button className="btn-custom" type="button" onClick={close}>Đóng</button>
     </Wrapper>
   )
 }

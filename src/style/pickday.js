@@ -2,10 +2,17 @@ import styled from "styled-components";
 
 export const PickdayWrapper = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  .wrap {
+    display: flex;
+    align-items: center;
+  }
 `
 export const NavBar = styled.ul`
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   list-style: none;
   li {
     border-bottom-right-radius: 8px;

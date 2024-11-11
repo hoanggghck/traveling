@@ -22,6 +22,17 @@ export const GlobalStyle = createGlobalStyle`
   .cursor-pointer {
     cursor: pointer;
   }
+  .btn-custom {
+    width: 150px;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 8px auto;
+    padding: 8px 16px;
+  }
 `
 
 export const BackgroundWrapper = styled.div`

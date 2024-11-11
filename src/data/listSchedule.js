@@ -30,7 +30,7 @@ export const listDay1 = [
     content: {
       name: 'Xem hoa dã quỳ | Đồi cỏ hồng',
       location: '',
-      url: '#',
+      url: 'https://maps.app.goo.gl/jMAvtBWy1i8co5eo8',
       price: 100
     }
   },
@@ -41,7 +41,7 @@ export const listDay1 = [
     content: {
       name: 'Lạt chay',
       location: '24b/1 hùng vương',
-      url: '#',
+      url: 'https://maps.app.goo.gl/PCh4v1YbZnwrStZf9',
       price: 500
     }
   },
@@ -52,7 +52,7 @@ export const listDay1 = [
     content: {
       name: 'Lẩu bò ba toa',
       location: '16/5 Nguyễn thị Định, P5 tp Đà Lạt',
-      url: '#',
+      url: 'https://maps.app.goo.gl/EeLKmZE2CikhrHdP8',
       price: 500
     }
   },
@@ -63,7 +63,7 @@ export const listDay1 = [
     content: {
       name: 'Kem bơ phụng',
       location: 'chợ đà lạt',
-      url: '#',
+      url: 'https://maps.app.goo.gl/Ntecf7qTvBTQvh5YA',
       price: 40
     }
   },
@@ -74,7 +74,7 @@ export const listDay1 = [
     content: {
       name: 'Uống sữa đậu nành',
       location: 'Chợ đà lạt',
-      url: '#',
+      url: 'https://maps.app.goo.gl/Ntecf7qTvBTQvh5YA',
       price: 500
     }
   },
@@ -99,7 +99,7 @@ export const listDay2 = [
     content: {
       name: 'Bánh mì xíu mại Hoàng Diệu',
       location: 'Quán ăn sáng Đà Lạt số 26 Hoàng Diệu, P.5, Tp.Đà Lạt',
-      url: '#',
+      url: 'https://maps.app.goo.gl/YfAdMWq7unpWoPuC8',
       price: 100
     }
   },
@@ -109,7 +109,7 @@ export const listDay2 = [
     type: TYPE.sightseeing,
     content: {
       name: 'The Florest Hoa Trong Rừng',
-      location: 'Thôn 4, Đà Lạt, Lâm Đồng',
+      location: 'https://maps.app.goo.gl/8e7fDLjzohR2Y8Wt8',
       url: '#',
       price: 300
     }
@@ -132,7 +132,7 @@ export const listDay2 = [
     content: {
       name: 'Đi dạo phố',
       location: 'Chợ đà lạt',
-      url: '#',
+      url: 'https://maps.app.goo.gl/Ntecf7qTvBTQvh5YA',
       price: 0
     }
   },
@@ -143,7 +143,7 @@ export const listDay2 = [
     content: {
       name: 'Uống sữa đậu nành',
       location: 'Chợ đà lạt',
-      url: '#',
+      url: 'https://maps.app.goo.gl/Ntecf7qTvBTQvh5YA',
       price: 500
     }
   }
