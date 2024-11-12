@@ -1,7 +1,8 @@
-import { NavBar, PickdayWrapper } from '@/style/pickday'
+import { BackupWrapper, NavBar, PickdayWrapper } from '@/style/pickday'
 import SVGSprite from './common/SVGSprite'
 import { useState } from 'react'
 import Modal from './modal';
+import { listBackup } from '@/data/listBackup';
 
 const PickDay = ({ activeDay, setActiveDay }) => {
   const [active, setActive] = useState(false);
@@ -17,7 +18,12 @@ const PickDay = ({ activeDay, setActiveDay }) => {
       </li>
     )
   })
+
+  const openNewTab = (url) => {
+    window.open(url);
+  }
   return (
+    <>
     <PickdayWrapper>
       <div className="wrap" onClick={() => setActive(true)}>
         <SVGSprite name="custom-document-text" color="#4f3842"/>&nbsp;
@@ -26,14 +32,24 @@ const PickDay = ({ activeDay, setActiveDay }) => {
       <NavBar>
         {renderNav}
       </NavBar>
-      { active &&
-        <Modal active={active} maxwidth={700}>
-          <div>AAAAA</div>
-          <button className="btn-custom" type="button" onClick={() => setActive(false)}>Đóng</button>
-        </Modal>
-
-      }
     </PickdayWrapper>
+    { active &&
+      <Modal active={active} maxwidth={700}>
+        <BackupWrapper>
+          { listBackup.map((item, index) => {
+            return (
+              <div className='item' key={index} onClick={() => openNewTab(item.url)}>
+                {item.name}
+              </div>
+            )
+          })
+
+          }
+        </BackupWrapper>
+        <button className="btn-custom" type="button" onClick={() => setActive(false)}>Đóng</button>
+      </Modal>
+    }
+    </>
   )
 }
 

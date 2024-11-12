@@ -26,3 +26,14 @@ export const NavBar = styled.ul`
     }
   }
 `
+
+export const BackupWrapper = styled.div`
+  height: 80%;
+  overflow-y: auto;
+  .item {
+    border: 1px solid var(--border);
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+  }
+`
